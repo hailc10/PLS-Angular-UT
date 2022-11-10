@@ -17,7 +17,6 @@ describe('HeroComponent (shallow tests)', () => {
 
     it('should have the correct hero', () => {
         fixture.componentInstance.hero = {id: 11, name: 'Mr. Nice', strength: 10 };
-        fixture.detectChanges();
         expect(fixture.componentInstance.hero.name).toEqual('Mr. Nice');
     })
 
